@@ -139,7 +139,7 @@ The provided Java code implements a number guessing game using the Swing library
 ### Summary
 This code sets up a simple number guessing game where the player has to guess a randomly generated number between 1 and 100. The player has up to 5 attempts to guess the number correctly. The game provides feedback after each guess and allows the player to start a new game after either winning or using up all attempts. The GUI components and event handling are managed using Java Swing, providing a graphical interface for the game.
 
-#StudentGrade
+# StudentGrade
 The provided Java code implements a Student Grade Calculator using the Swing library for the graphical user interface (GUI). Below is a detailed explanation of the code:
 
 ### Class Structure and Initialization
