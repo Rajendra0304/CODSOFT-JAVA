@@ -1,4 +1,4 @@
-# ATM 
+# 1. ATM 
 The provided Java code implements a simple ATM (Automated Teller Machine) interface using the Swing library for the graphical user interface (GUI). Here is a detailed explanation of the code:
 
 ### BankAccount Class
@@ -56,8 +56,9 @@ The code provides a basic ATM simulation where a user can:
 - Exit the application.
 
 The interface is designed using Java Swing components, and it handles user input with basic validation and feedback through dialog boxes.
+#  
 
-# NumberGame
+# 2. NumberGame
 The provided Java code implements a number guessing game using the Swing library for the graphical user interface (GUI). Here is a detailed explanation of the code:
 
 ### Class Structure and Initialization
@@ -138,8 +139,9 @@ The provided Java code implements a number guessing game using the Swing library
 
 ### Summary
 This code sets up a simple number guessing game where the player has to guess a randomly generated number between 1 and 100. The player has up to 5 attempts to guess the number correctly. The game provides feedback after each guess and allows the player to start a new game after either winning or using up all attempts. The GUI components and event handling are managed using Java Swing, providing a graphical interface for the game.
+# 
 
-# StudentGrade
+# 3. StudentGrade
 The provided Java code implements a Student Grade Calculator using the Swing library for the graphical user interface (GUI). Below is a detailed explanation of the code:
 
 ### Class Structure and Initialization
