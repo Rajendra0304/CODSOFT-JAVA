@@ -2,20 +2,20 @@
 # EXPLANATION
 The provided Java code implements a simple ATM (Automated Teller Machine) interface using the Swing library for the graphical user interface (GUI). Here is a detailed explanation of the code:
 
-* BankAccount Class
-- Purpose: Represents a bank account with basic functionalities like checking the balance, depositing money, and withdrawing money.
-- Fields:
+### BankAccount Class
+- **Purpose**: Represents a bank account with basic functionalities like checking the balance, depositing money, and withdrawing money.
+- **Fields**:
   - `private double balance`: Stores the account balance.
-- Constructor:
+- **Constructor**:
   - `public BankAccount(double balance)`: Initializes the account with a given balance.
-- Methods:
+- **Methods**:
   - `public double getBalance()`: Returns the current balance.
   - `public void deposit(double amount)`: Adds the specified amount to the balance.
   - `public boolean withdraw(double amount)`: Withdraws the specified amount if sufficient funds are available; returns true if successful, false otherwise.
 
-* ATM Class
-- Inheritance: Extends `JFrame` to create a main window for the ATM interface.
-- Constructor:
+### ATM Class
+- **Inheritance**: Extends `JFrame` to create a main window for the ATM interface.
+- **Constructor**:
   - `public ATM(BankAccount account)`: Sets up the GUI for the ATM.
     - **Window Settings**:
       - Sets the title of the window to "ATM".
