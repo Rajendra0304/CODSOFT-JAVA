@@ -138,3 +138,77 @@ The provided Java code implements a number guessing game using the Swing library
 
 ### Summary
 This code sets up a simple number guessing game where the player has to guess a randomly generated number between 1 and 100. The player has up to 5 attempts to guess the number correctly. The game provides feedback after each guess and allows the player to start a new game after either winning or using up all attempts. The GUI components and event handling are managed using Java Swing, providing a graphical interface for the game.
+
+#StudentGrade
+The provided Java code implements a Student Grade Calculator using the Swing library for the graphical user interface (GUI). Below is a detailed explanation of the code:
+
+### Class Structure and Initialization
+
+**Class Definition**:
+- `public class StudentGrade extends JFrame`:
+  - Extends `JFrame` to create a main window for the application.
+
+### GUI Components and Layout
+
+**Fields**:
+- `private JLabel totalMarksLabel;`: Label to display the total marks.
+- `private JLabel averagePercentageLabel;`: Label to display the average percentage.
+- `private JLabel gradeLabel;`: Label to display the grade.
+- `private JTextField numSubjectsField;`: Text field to enter the number of subjects.
+- `private JButton calculateButton;`: Button to trigger the grade calculation.
+
+**Constructor**:
+- `public StudentGrade()`:
+  - Sets the title of the window to "Student Grade Calculator".
+  - Sets the window size to 400x200 pixels.
+  - Sets the default close operation to exit the application when the window is closed.
+  - Centers the window on the screen.
+  - Initializes and sets up the layout of GUI components using `GridBagLayout`.
+  - Adds action listener to the `calculateButton` to handle button click events.
+
+**Layout Details**:
+- A `JPanel` with `GridBagLayout` is used to organize the components.
+- `GridBagConstraints` are used to specify the position and layout behavior of each component.
+- Labels and text fields are added to the panel with appropriate constraints to create a user-friendly interface.
+
+### Event Handling
+
+**Action Listener**:
+- `calculateButton.addActionListener(new ActionListener() {...})`:
+  - An anonymous inner class implements the `ActionListener` interface.
+  - The `actionPerformed` method calls the `calculateGrade()` method when the button is clicked.
+
+### Grade Calculation Logic
+
+**calculateGrade Method**:
+- `private void calculateGrade()`:
+  - Reads the number of subjects from `numSubjectsField`.
+  - Initializes `totalMarks` to 0.
+  - Uses a for-loop to prompt the user to enter marks for each subject using `JOptionPane.showInputDialog`.
+  - Validates the entered marks to ensure they are between 0 and 100.
+  - Accumulates the total marks.
+  - Calculates the average percentage.
+  - Calls `calculateGrade(averagePercentage)` to determine the grade based on the average percentage.
+  - Updates the labels (`totalMarksLabel`, `averagePercentageLabel`, `gradeLabel`) with the calculated values.
+  - Catches `NumberFormatException` to handle invalid input for the number of subjects and displays an error message.
+
+**calculateGrade Method** (Overloaded):
+- `private String calculateGrade(double averagePercentage)`:
+  - Determines the grade based on the average percentage using conditional statements.
+  - Returns the corresponding grade as a string:
+    - `A` for 90% and above.
+    - `B` for 80% and above.
+    - `C` for 70% and above.
+    - `D` for 60% and above.
+    - `E` for 40% and above.
+    - `F` for below 40%.
+
+### Main Method
+
+**Main Method**:
+- `public static void main(String[] args)`:
+  - Uses `SwingUtilities.invokeLater` to ensure that the GUI creation and updates are done on the Event Dispatch Thread.
+  - Creates an instance of `StudentGrade` to start the application.
+
+### Summary
+This code creates a simple GUI application to calculate and display the total marks, average percentage, and grade for a student based on marks entered for multiple subjects. The GUI includes input fields for the number of subjects, buttons to trigger calculations, and labels to display results. The application validates user input, performs necessary calculations, and updates the GUI with results, providing a user-friendly experience.
